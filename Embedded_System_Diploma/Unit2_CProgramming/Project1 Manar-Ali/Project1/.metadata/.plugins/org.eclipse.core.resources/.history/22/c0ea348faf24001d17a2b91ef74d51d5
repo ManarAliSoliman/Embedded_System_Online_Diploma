@@ -1,0 +1,281 @@
+/*
+ * Project1.c
+ *
+ *  Created on: Aug 24, 2022
+ *      Author: Rabbit
+ */
+
+
+#include <stdio.h>
+#define state_on 1
+#define state_off 0
+void firstList(char input1){
+
+	if (input1=='a'){
+		printf("Turn on the vehicle engine\n\n");
+
+		printf("a. Turn off the engine\n");
+		printf("b. Set the traffic light color\n");
+		printf("c. Set the room temperature (Temperature Sensor)\n");
+		printf("d. Set the engine temperature (Engine Temperature Sensor)\n");
+	}
+	else if(input1=='b'){
+		printf("Turn off the vehicle engine\n\n");
+
+		printf("a. Turn on the vehicle engine\n");
+		printf("b. Turn off the vehicle engine\n");
+		printf("c. Quit the system\n\n");
+	}
+	else if(input1=='c'){
+		printf("Quit the system\n");
+
+	}
+}
+
+void second_choice(char input2){
+	if (input2=='a'){
+		printf(" Turn on the vehicle engine\n");
+
+		printf("a. Turn off the engine\n");
+		printf("b. Set the traffic light color\n");
+		printf("c. Set the room temperature (Temperature Sensor)\n");
+		printf("d. Set the engine temperature (Engine Temperature Sensor)\n");
+
+	}
+	else if(input2=='b'){
+		printf("Turn off the vehicle engine\n");
+	}
+	else if(input2=='c'){
+		printf("Quit the system\n");
+
+	}
+
+}
+void third_choice(char input3){
+	char x;
+	if (input3=='a'){
+		printf("a. Turn on the vehicle engine\n");
+		printf("b.Turn off the vehicle engine\n");
+		printf("c.Quit the system\n");
+	}
+	scanf(" %c", &x);
+	firstList(x);
+
+}
+
+void fourth_choice(char input4){
+
+	if(input4=='a'){
+		printf("Turn off the engine\n");
+	}
+	else if(input4=='b'){
+		printf("enter the required color\n");
+
+	}
+	else if(input4=='c'){
+		printf("input the room temperature\n");
+	}
+	else if(input4=='d'){
+		printf("input the engine temperature\n");
+	}
+}
+void traffic_light(char input5){
+	if(input5 =='g'){
+		printf("Engine State : ON\n");
+		printf("AC : ON\n");
+		printf("Vehicle speed: 100 km/hr \n");
+		printf("Room Temperature: 35\n");
+		printf("Engine Temperatue Controller State: ON\n");
+		printf("Engine Temperature: 160\n\n");
+
+		printf("a. Turn off the engine\n");
+		printf("b. Set the traffic light color\n");
+		printf("c. Set the room temperature (Temperature Sensor)\n");
+		printf("d. Set the engine temperature (Engine Temperature Sensor)\n");
+
+
+	}
+	else if (input5=='o'){
+		printf("Engine State : ON\n");
+		printf("AC : ON\n");
+		printf("Vehicle speed: 30 km/hr \n");
+		printf("Room Temperature: 35\n");
+		printf("Engine Temperatue Controller State: ON\n");
+		printf("Engine Temperature: 120\n\n");
+
+		printf("a. Turn off the engine\n");
+		printf("b. Set the traffic light color\n");
+		printf("c. Set the room temperature (Temperature Sensor)\n");
+		printf("d. Set the engine temperature (Engine Temperature Sensor)\n");
+
+
+	}
+	else if (input5=='r'){
+		printf("Engine State : OFF\n");
+		printf("AC : ON\n");
+		printf("Vehicle speed: 0 km/hr \n");
+		printf("Room Temperature: 35\n");
+		printf("Engine Temperatue Controller State: ON\n");
+		printf("Engine Temperature: 30\n\n");
+
+		printf("a. Turn off the engine\n");
+		printf("b. Set the traffic light color\n");
+		printf("c. Set the room temperature (Temperature Sensor)\n");
+		printf("d. Set the engine temperature (Engine Temperature Sensor)\n");
+
+
+	}
+}
+void room_temperature(int temp1){
+	if(temp1<=10){
+		printf("Engine State : ON\n");
+		printf("turn AC ON\n");
+		printf("Vehicle speed: 30 km/hr \n");
+		printf("Room Temperature: 35\n");
+		printf("Engine Temperatue Controller State: ON\n");
+		printf("Engine Temperature: 150\n\n");
+
+		printf("a. Turn off the engine\n");
+		printf("b. Set the traffic light color\n");
+		printf("c. Set the room temperature (Temperature Sensor)\n");
+		printf("d. Set the engine temperature (Engine Temperature Sensor)\n");
+
+
+		temp1=20;
+	}
+	else if (temp1>=30){
+		printf("Engine State : ON\n");
+		printf("turn AC ON\n");
+		printf("Vehicle speed: 100 km/hr \n");
+		printf("Room Temperature: 35\n");
+		printf("Engine Temperatue Controller State: ON\n");
+		printf("Engine Temperature: 150\n\n");
+
+		printf("a. Turn off the engine\n");
+		printf("b. Set the traffic light color\n");
+		printf("c. Set the room temperature (Temperature Sensor)\n");
+		printf("d. Set the engine temperature (Engine Temperature Sensor)\n");
+
+
+		temp1=20;
+	}
+	else{
+		printf("Engine State : OFF\n");
+		printf("turn AC OFF\n");
+		printf("Vehicle speed: 0km/hr \n");
+		printf("Room Temperature: 35\n");
+		printf("Engine Temperatue Controller State: ON\n");
+		printf("Engine Temperature: 20\n\n");
+
+		printf("a. Turn off the engine\n");
+		printf("b. Set the traffic light color\n");
+		printf("c. Set the room temperature (Temperature Sensor)\n");
+		printf("d. Set the engine temperature (Engine Temperature Sensor)\n");
+
+
+	}
+}
+void engine_temperature(int temp2){
+	if(temp2<=100){
+		printf("Engine State : ON\n");
+		printf("AC : ON\n");
+		printf("Vehicle speed: 30 km/hr \n");
+		printf("Room Temperature: 35\n");
+		printf("Engine Temperatue Controller State: ON\n");
+		printf("Engine Temperature: 150\n\n");
+
+		printf("a. Turn off the engine\n");
+		printf("b. Set the traffic light color\n");
+		printf("c. Set the room temperature (Temperature Sensor)\n");
+		printf("d. Set the engine temperature (Engine Temperature Sensor)\n");
+
+
+		temp2=125;
+	}
+	else if(temp2>150){
+		printf("Engine State : ON\n");
+		printf("AC : ON\n");
+		printf("Vehicle speed: 100 km/hr\n");
+		printf("Room Temperature: 35\n");
+		printf("Engine Temperatue Controller State: ON\n");
+		printf("Engine Temperature: 150\n\n");
+
+		printf("a. Turn off the engine\n");
+		printf("b. Set the traffic light color\n");
+		printf("c. Set the room temperature (Temperature Sensor)\n");
+		printf("d. Set the engine temperature (Engine Temperature Sensor)\n");
+
+
+		temp2=125;
+	}
+	else{
+		printf("Engine State : ON\n");
+		printf("AC : ON\n");
+		printf("Vehicle speed: 0 km/hr \n");
+		printf("Room Temperature: 25\n");
+		printf("Engine Temperatue Controller State: OFF\n");
+		printf("Engine Temperature: 20\n\n");
+
+		printf("a. Turn off the engine\n");
+		printf("b. Set the traffic light color\n");
+		printf("c. Set the room temperature (Temperature Sensor)\n");
+		printf("d. Set the engine temperature (Engine Temperature Sensor)\n");
+
+
+	}
+}
+void vehicle_speed(int speed){
+	if(speed==30){
+		printf(" Turn ON AC \n");
+		printf("Turn ON Engine Temperature Controller")
+	}
+}
+int main(){
+	setvbuf(stdout , NULL , _IONBF , 0);
+	char input1,input2,color,temp,speed ,x;
+
+	printf("a. Turn on the vehicle engine\n");
+	printf("b. Turn off the vehicle engine\n");
+	printf("c. Quit the system\n\n");
+
+	scanf(" %c",&input1);
+	firstList(input1);
+	scanf(" %c",&input2);
+	if(input1=='b'){
+	second_choice(input2);
+
+	}
+
+	while(state_on){
+	if(input1=='a'&& input2=='a'){
+	third_choice(input2);
+	}
+
+	if(input1=='a'&&input2=='b'){
+		fourth_choice(input2);
+	}
+	if(input1=='a'&& input2=='b'){
+		scanf(" %c", &color);
+		traffic_light(color);
+
+	}
+	if(input1=='a'&& input2=='c'){
+		printf("enter the temperature\n");
+		scanf(" %c",&temp);
+		room_temperature(temp);
+	}
+	if(input1=='a'&& input2=='d'){
+			printf("enter the temperature\n");
+			scanf(" %c",&temp);
+			engine_temperature(temp);
+		}
+	//if(input1=='a' &&(input2=='c' || input2=='d') ){
+
+	//}
+	scanf(" %c",&input2);
+	scanf(" %d",&speed);
+	vehicle_speed(speed);
+	}
+	return 0;
+}
+
